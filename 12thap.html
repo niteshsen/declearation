@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <title>Declearation</title>
+</head>
+<body>
+    <h2>Redeclearing a Variable Using var</h2>
+    <script>
+        var x = 'Hello';
+        // Here x is Hello
+        {
+            var x = 'Hello JS';
+            // Here x is Hello JS
+        }
+        // Here x is Hello Js
+        document.write(x);
+    </script><br><br><br>
+
+    <h2>Javascript const</h2>
+    <p>Declearing a constant array does NOT make the elements unchangable:</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    
+    <script>
+    // Create an Array:
+    const fruits = [ "Apple", "Banana", "Orange"];
+    // Display the array:
+    document.getElementById("demo").innerHTML = fruits;
+    // changing an Element:
+    fruits[0] = "Apricot";
+    // Add an element
+    fruits.push("Mango");
+    // Display the array
+    document.getElementById("demo1").innerHTML = fruits;    
+    </script><br><br><br><br>
+
+
+     <h2>Redeclearing the variable Using let:</h2>
+     <p id="hello"></p>
+     <script>
+         let s = "Hello";
+        //  Here x is hello
+         {
+             let s = "Hello js"
+             //  Here x is hello js
+         }
+         document.getElementById("hello").innerHTML = s;
+     </script><br><br><br><br><br>
+
+     <h2>Javascript Const</h2>
+     <p id="demo8"></p>
+     <p id="demo9"></p>
+     <script>
+        //  creating an array
+         const mobile = ["Iphone", "Redmi", "Oppo"];
+        //  display the array
+        document.getElementById("demo8").innerHTML = mobile;
+        // changing an Element:
+        mobile[1] = "Oneplus";
+        // Add an element
+        mobile.push("Motto");
+        // Display the array
+        document.getElementById("demo9").innerHTML = mobile;
+     </script>
+</body>
+</html>
